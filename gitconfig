@@ -9,6 +9,17 @@
 	co = checkout
 	cob = checkout -b
 	cim = commit -m
+	ri = rebase --interactive
+	oups = commit --amend --no-edit
 [core]
 	excludesfile = ~/.gitignore_global
-
+[rebase]
+	autosquash = true
+[merge]
+	tool = meld
+[diff]
+	tool = meld
+[mergetool]
+	prompt = false
+[rerere]
+	enabled = true
